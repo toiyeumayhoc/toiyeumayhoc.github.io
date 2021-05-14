@@ -3,6 +3,7 @@ const palespringbud = "#E3E9C2";
 const darkstategray = "#315555";
 const lemonyellowcrayola = "#F9FBB2";
 const silvercharlice = "#A5ABAF";
+
 function openSkillDescription(index ) {
     const x = document.getElementById("skill-des-" + index);  
     if(x.style.display === "none" || x.style.display === ""){

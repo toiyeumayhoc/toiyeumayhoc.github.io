@@ -29,8 +29,8 @@ p {
 
 
 .wrapper-content {
-    min-width: 100%;
-    width: 1178px;
+    width : 100%;
+    max-width: 1170px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -46,8 +46,6 @@ p {
 .skill {
     text-align: center;
     margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 .skill-blocks {
@@ -56,9 +54,10 @@ p {
     justify-content: space-between;
 }
 
+.experiences h2,
 .skill h2 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
@@ -118,8 +117,7 @@ p {
 .skill-technical:hover {
     background-color: var(--lemon-yellow-crayola);
     cursor: pointer;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    transform: scale(1.05);
 }
 
 .skill-technical p {
@@ -154,6 +152,7 @@ p {
 .infor-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .summary-avatar {
@@ -162,9 +161,7 @@ p {
 }
 
 .information-block {
-    width: 245px;
-    margin: 0px 15px;
-    flex : 1;
+    width: 320px;
 }
 
 .information-block h2{
@@ -228,3 +225,103 @@ p {
 .summary-description p a {
     font-weight: 700;
 }
+
+.experiences {
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
+.experience-item {
+    background-color: var(--pale-spring-bud);
+    padding: 10px 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-size: 25px;
+    font-weight: 501;
+}
+
+.role  {
+    margin-top: 3px;
+    font-style: italic;
+}
+
+.project-summary {
+    margin-top: 5px;;
+    font-weight: 501;
+    text-align: justify;
+}
+
+
+
+
+/* social button */
+
+.connect-me {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.connect-me::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: var(--dark-state-gray);
+    transform: translateX(-50%) translateY(-10px);
+}
+
+.connect-me h2 {
+    font-size: 25px;
+    color : var(--dark-state-gray);
+    margin-bottom: 10px;
+}
+
+
+.button-social {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: var(--lemon-yellow-crayola);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: 2px solid var(--dark-state-gray);
+    box-sizing: content-box;
+  }
+  
+  .button-social:hover{
+    width: 180px;
+  }
+
+  .button-social .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+    color: var(--dark-state-gray);
+  }
+   
+  .button-social .icon i{
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+  }
+
+  .button-social span{
+    font-size: 20px;
+    font-weight: 501;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+    color: var(--dark-state-gray);
+  }
