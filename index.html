@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Online - Cuong Le</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        light yellow : #F8FCDA
+        pale spring bud : #E3E9C2
+        dar state gray : #315555
+        lemon yellow crayola : #F9FBB2
+        silver chalice : #A5ABAF
+    -->
+    <div class="container">
+        <div class="wrapper-content">
+            <div class="title-cv">
+                <h1>Cuong Le Resume</h1>
+            </div>
+            <div class="toppart">
+                <div class="summary">
+                    <img src="/img/avartar squar png.png" alt="" class="summary-avatar">
+                    <div class="summary-description">
+                        <p>Hi there, My name is <a>Cuong Le</a>. I'm a developer who have 4 years experience with
+                            <a>Java</a>
+                            and <a>Spring Boot</a>.</p>
+                        <p>Beside a developer, I'm also a Photographer, a Booktuber and a Shuffler.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infor-section">
+
+                <div class="information-block">
+                    <h2>About Me</h2>
+                    <div class="basic-infor-item">
+                        <img src="/img/birthday-cake.png" alt="">
+                        <p>September 11 1995</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/placeholder.png" alt="">
+                        <p>Ho Chi Minh City, Viet Nam</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/email.png" alt="">
+                        <p>cuonglv1109@gmail.com</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/phone.png" alt="">
+                        <p>0923500498</p>
+                    </div>
+                </div>
+
+                <div class="information-block">
+                    <h2>Education</h2>
+                    <div class="basic-infor-item">
+                        <img src="/img/school.png" alt="">
+                        <p>University of Information Technology</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/computer-science.png" alt="">
+                        <p>Computer Science</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/certificate.png" alt="">
+                        <p>GPA : 8/10</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/mortarboard.png" alt="">
+                        <p>Graduated in 2017</p>
+                    </div>
+                </div>
+                <div class="information-block">
+                    <h2>Language</h2>
+                    <div class="basic-infor-item">
+                        <img src="/img/vietnam.png" alt="">
+                        <p>Vietnamese (Native)</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/great-britain.png" alt="">
+                        <p>English</p>
+                    </div>
+                    <div class="basic-infor-item">
+                        <img src="/img/china.png" alt="">
+                        <p>Chinese</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="skill">
+                <h2>My Skills</h2>
+
+                <div class="skill-blocks">
+                    <div class="skill-technical" onclick="openSkillDescription(1)">
+                        <img src="/img/spring-boot.png" alt="" class="skill-icon">
+                        <p>Spring Boot</p>
+
+                    </div>
+                    <div class="skill-technical" onclick="openSkillDescription(2)">
+                        <img src="/img/mongodb.png" alt="" class="skill-icon">
+                        <p>MongoDB</p>
+
+                    </div>
+                    <div class="skill-technical" onclick="openSkillDescription(3)">
+                        <img src="/img/iconfinder_React.js_logo_1174949.png" alt="" class="skill-icon">
+                        <p>React JS</p>
+
+                    </div>
+                    <div class="skill-technical" onclick="openSkillDescription(4)">
+                        <img src="/img/programing.png" alt="" class="skill-icon">
+                        <p>Other Skills</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="experiences">
+                <div class="experience-item">
+                    
+                </div>
+            </div>
+
+            <!--POP UP-->
+            <div class="skill-description" id="skill-des-1">
+                <div class="des-icon">
+                    <img onclick="closeSkillDescription(1)" src="/img/close.png" alt="" class="close-icon">
+                </div>
+                <p>After gradutated from the university in 2017, i joined Robert Bosch company as a java developer and
+                    work with Spring Boot till now.
+                    With Spring Boot, i have worked with Spring Mongo Data, Spring Security, Spring Rest Api and many
+                    other libraries which Spring dev team already provided for developers.</p>
+            </div>
+            <div class="skill-description" id="skill-des-2">
+                <div class="des-icon">
+                    <img onclick="closeSkillDescription(2)" src="/img/close.png" alt="" class="close-icon">
+                </div>
+                <p>Started from 2017 (after graduated from the university), i have been worked with Mongo DB for 4
+                    years. Mostly i work with Spring MongoDB Data and Mongo aggregation.</p>
+            </div>
+            <div class="skill-description" id="skill-des-3">
+                <div class="des-icon">
+                    <img onclick="closeSkillDescription(3)" src="/img/close.png" alt="" class="close-icon">
+                </div>
+                <p>I just started with React JS from early of 2021. In covid time, i was thinking about making my own
+                    project, therefore i started to learn React JS to build the front end side.
+                    Luckily, i already had knowledge in HTML, CSS and Javascript so React JS does not take too much
+                    effort from me.
+                </p>
+            </div>
+            <div class="skill-description" id="skill-des-4">
+                <div class="des-icon">
+                    <img onclick="closeSkillDescription(4)" src="/img/close.png" alt="" class="close-icon">
+                </div>
+                <p>Back to the time when i was in univerity, i joined the MMLAB which focus on AI and Machine Learning
+                    projects. Because of that, i gained quite a lot of knowledge in this area.
+                    </br>And i also have knowledge about web security when i worked in OPSWAT Company, which has the
+                    business concentrated on Cyber Security.
+                    </br>Currently i am building my own project in my spare time, then i also learn about Docker and
+                    other devOp stuffs.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
