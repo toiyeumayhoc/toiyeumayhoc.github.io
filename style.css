@@ -43,6 +43,32 @@ p {
     font-weight: 700;    
 }
 
+.title-cv h1{
+    display: inline-block;
+    position: relative;  
+}
+
+.title-cv h1::before {
+     content: "";
+     position: absolute;
+     width: 25px;
+     height: 3px;
+     background-color: var(--dark-state-gray);
+     top: 50%;
+     transform: translateX(-130%);
+}
+
+.title-cv h1::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-state-gray);
+    top: 50%;
+    transform: translateX(30%);
+}
+
+
 .skill {
     text-align: center;
     margin-top: 20px;
@@ -59,9 +85,9 @@ p {
     text-transform: uppercase;
     font-size: 35px;
     margin-bottom: 10px;
+    position: relative;
+    display:inline-block; 
 }
-
-
 
 .skill-technical {
     display: flex;
@@ -324,4 +350,83 @@ p {
     line-height: 50px;
     transition: all 0.3s ease-out;
     color: var(--dark-state-gray);
+  }
+
+
+  /* for Tablet  */
+  @media screen and (min-width : 740px) and (max-width : 1000px) {
+    .information-block:nth-of-type(2){
+        margin: 0px 5px;
+    }
+  }
+
+  /* for Mobile */
+  @media screen and (max-width : 740px) {
+    .infor-section {
+        flex-flow: wrap;
+    }
+    .information-block {
+        width: 100%;
+    }
+    .skill-blocks {
+        flex-flow: wrap;
+        justify-content: center;
+       
+    }
+    .skill-technical {
+        margin : 4px;
+    }
+  }
+
+  /* ajustment for top part */
+  @media screen and (max-width : 600px) {
+    h1::after {
+        display: none;
+    }
+    h1::before {
+        display: none;
+    }
+    .summary-avatar {
+        height : 30vw;
+    }
+    .summary {
+        align-items: flex-end;
+    }
+  }
+
+  /* adjustment for pop up */
+  @media screen and (max-width : 626px) {
+    .skill-description {
+        width: 100%;
+        left: 0;
+        margin-left: 0px;
+        height: auto;
+    }
+  }
+
+  /* adjustment for avatar image */
+  @media screen and (max-width : 400px) {
+    .summary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .summary-description::after {
+        display: none;
+    }
+    .summary-avatar {
+        height: auto;
+        max-width: 85%;;
+    }
+  }
+
+  @media print {
+    h1 {
+        display: none !important;
+    }
+    .summary-description::after {
+        display: none;
+    }
+    .connect-me {
+        display: none;
+    }
   }
