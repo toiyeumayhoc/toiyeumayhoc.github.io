@@ -292,6 +292,8 @@ p {
     position: relative;
 }
 
+
+
 .connect-me::before {
     position: absolute;
     content: "";
@@ -307,6 +309,11 @@ p {
     margin-bottom: 10px;
 }
 
+.connect-me a{
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
 
 .button-social {
     display: inline-block;
