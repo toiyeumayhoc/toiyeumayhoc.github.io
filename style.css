@@ -43,6 +43,8 @@ p {
     font-weight: 700;    
 }
 
+
+
 .title-cv h1{
     display: inline-block;
     position: relative;  
@@ -97,7 +99,8 @@ p {
     border-radius: 10px;
     transition: 0.3s;
     justify-content: flex-start;
-   
+    box-shadow: 1px 1px 4px var(--dark-state-gray);
+    animation: popUp 0.5s ease-out;
 }
 
 .skill-description {   
@@ -116,6 +119,9 @@ p {
     display: none;
     box-shadow: 3px 5px 10px;
 }
+
+
+
 
 .des-icon {
     display: flex;
@@ -184,10 +190,12 @@ p {
 .summary-avatar {
     width : 250px;
     max-width: 30%;
+    animation: slideFromTop 0.5s ease-out;
 }
 
 .information-block {
     width: 320px;
+    animation: popUp 0.5s ease-out;
 }
 
 .information-block h2{
@@ -226,6 +234,7 @@ p {
     margin-right: 15px;
     text-align: left;
     position: relative;
+    animation: slideFromLeft 0.8s ease-out;
 }
 
 .summary-description:after {
@@ -263,6 +272,19 @@ p {
     padding: 10px 8px;
     border-radius: 10px;
     margin-bottom: 5px;
+    
+}
+
+.experience-item:nth-of-type(1) {
+    animation: slideFromLeft 0.5s ease-out;
+}
+
+.experience-item:nth-of-type(2) {
+    animation: slideFromRight 0.5s ease-out;
+}
+
+.experience-item:nth-of-type(3) {
+    animation: slideFromLeft 0.5s ease-out;
 }
 
 .company {
@@ -437,3 +459,41 @@ p {
         display: none;
     }
   }
+
+  /* animation */
+  @keyframes popUp {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-200px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(200px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+
+@keyframes slideFromTop {
+    0% {
+        transform: translateY(-100px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
