@@ -541,7 +541,7 @@ p {
                     <h2>About Me</h2>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-vuQ4Ocuj4Zo/YJ9lRxoX9KI/AAAAAAAAXMI/i9HckVJDmgwqToxMLIpR9hzvhlpPU27WgCLcBGAsYHQ/s512/birthday-cake.png'/>
-                        <p>September 11 1995</p>
+                        <p>Born in 1995</p>
                     </div>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-FFevr3jAofk/YJ9lVfj-JeI/AAAAAAAAXM4/fDB6Al-ihq4jwzUP-8szQ6KN0dsAb-h8wCLcBGAsYHQ/s512/placeholder.png'/>
@@ -584,11 +584,11 @@ p {
                     </div>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-kBJp7X12-S4/YJ9lT3OKF0I/AAAAAAAAXMk/tgTx4Nnvkc07KOaiQZhoLqhWv9qS-CetwCLcBGAsYHQ/s512/great-britain.png'/>
-                        <p>English</p>
+                        <p>English - TOEIC 815/990 (2017)</p>
                     </div>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-n0QGDL5drIw/YJ9lSkILn2I/AAAAAAAAXMQ/DDQm50EOTSQlIP8Txzpygn0XieUbivMRwCLcBGAsYHQ/s512/china.png'/>
-                        <p>Chinese</p>
+                        <p>Chinese : HSK3 289 (2021)</p>
                     </div>
 
                 </div>
@@ -726,7 +726,7 @@ p {
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(4)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>Back to the time when i was in univerity, i joined the MMLAB which focus on AI and Machine Learning
+            <p>Back to the time when i was in university, i joined the MMLAB which focus on AI and Machine Learning
                 projects. Because of that, i gained quite a lot of knowledge in this area.
                 <br/>And i also have knowledge about web security when i worked in OPSWAT Company, which has the
                 business concentrated on Cyber Security.
