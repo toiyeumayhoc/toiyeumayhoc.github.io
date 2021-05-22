@@ -365,33 +365,34 @@ p {
   }
   
   .button-social:hover{
-    width: 180px;
+    width: 160px;
   }
 
-  .button-social .icon{
+  .button-social .icon{    
     display: inline-block;
     height: 50px;
     width: 50px;
-    text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
-    line-height: 50px;
     transition: all 0.3s ease-out;
     color: var(--dark-state-gray);
   }
-   
-  .button-social .icon i{
-    font-size: 25px;
-    line-height: 50px;
+
+  .button-social .icon img{
+    height: 30px;
+    margin-top: 10px;
     transition: all 0.3s ease-out;
   }
 
-  .button-social span{
+  .social-name {
+    display: inline-block;
+    position: relative;
+    top: -5px;
     font-size: 20px;
-    font-weight: 501;
-    line-height: 50px;
+    font-weight: 501;  
     transition: all 0.3s ease-out;
     color: var(--dark-state-gray);
+    padding-top: 10px;
   }
 
 
@@ -584,7 +585,7 @@ p {
                     </div>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-kBJp7X12-S4/YJ9lT3OKF0I/AAAAAAAAXMk/tgTx4Nnvkc07KOaiQZhoLqhWv9qS-CetwCLcBGAsYHQ/s512/great-britain.png'/>
-                        <p>English - TOEIC 815/990 (2017)</p>
+                        <p>English : TOEIC 815 (2017)</p>
                     </div>
                     <div class='basic-infor-item'>
                         <img alt='' src='https://1.bp.blogspot.com/-n0QGDL5drIw/YJ9lSkILn2I/AAAAAAAAXMQ/DDQm50EOTSQlIP8Txzpygn0XieUbivMRwCLcBGAsYHQ/s512/china.png'/>
@@ -626,7 +627,7 @@ p {
                     <p class='time-range'>2016 - 2017</p>
                     <p class='role'>Research Student</p>
                     <p class='project-summary'>I reseached on Computer Vision, learned about machine learning, got into
-                        training model. At that time i also did my graduation thesis, so i took a
+                        training model. At that time I also did my graduation thesis, so I took a
                         paper about continuous hand gesture recognition and improved the result of the paper. </p>
                 </div>
                 <div class='experience-item'>
@@ -639,7 +640,7 @@ p {
                         The project is build with Angular in the front-end side, and Spring Boot in backend side with
                         microservice architecture. Because the team member are from many countries (Singapore,
                         Philippines, China, Vietnam, Germany) so
-                        i had a chance to learned not only about technical knowledge but also about the other amazing
+                        I had a chance to learned not only about technical knowledge but also about the other amazing
                         working cultures.
                     </p>
                 </div>
@@ -648,51 +649,62 @@ p {
                     <p class='time-range'>2019 - now</p>
                     <p class='role'>Java Developer</p>
                     <p class='project-summary'>OPSWAT is a Cyber Security company which offering solutions for
-                        comprehensive cybersecurity. And my project is called &quot;MetaAccess&quot;, i joined the team as a
+                        comprehensive cybersecurity. And my project is called &quot;MetaAccess&quot;, I joined the team as a
                         server backend java developer.
                         The project provides solution for the company that want to control over what devices are
                         accessing to the network based on the pre-defined policies. Front-end side is build with Angular
                         and backend side is using Spring Boot framework.
-                        The project is in security area therefore i learned a lot about cyber security standards, about
+                        The project is in security area therefore I learned a lot about cyber security standards, about
                         circumspect implementation to build up a perfect product quality.
                     </p>
                 </div>
             </div>
-            <div class='connect-me'>
+            
+          	<div class='connect-me'>
                 <h2>Connect with me</h2>
+              <a href='https://www.linkedin.com/in/l%C3%AA-v%C4%83n-c%C6%B0%E1%BB%9Dng-5a4601185/'>
+                    <div class='button-social'>
+                        <div class='icon'>
+                            <img alt='' src='https://1.bp.blogspot.com/-DryC8IxRX9E/YKj0M-ZXnGI/AAAAAAAAXQE/yyYHU9UHOag_FGEO8P9YAuM9g2tDMNPzgCLcBGAsYHQ/s320/linkedin-brands.png'/>
+                        </div>
+                        <div class='social-name'>Linkedin</div>
+                    </div>
+                </a>
                 <a href='https://www.facebook.com/levan.cuong1/'>
                     <div class='button-social'>
                         <div class='icon'>
-                            <i class='fab fa-facebook-f'/>
+                            <img alt='' src='https://1.bp.blogspot.com/-cFWIfqPwdWk/YKj0MYsV3sI/AAAAAAAAXP8/FpKywP7F0_cViss_ZHyo4Ziqq_OTlTCswCLcBGAsYHQ/s320/facebook-f-brands.png'/>
                         </div>
-                        <span>Facebook</span>
+                        <div class='social-name'>Facebook</div>
                     </div>
                 </a>
                 <a href='https://cuonglv1109.blogspot.com/'>
                     <div class='button-social'>
                         <div class='icon'>
-                            <i class='fab fa-blogger'/>
+                            <img alt='' src='https://1.bp.blogspot.com/-aEYdZTsmCnQ/YKj0MU3h5PI/AAAAAAAAXP4/saZJGzKaugMCjhaZ3ZCZbAz0x68C20_eACLcBGAsYHQ/s100/blogger-b-brands.png'/>
                         </div>
-                        <span>Blogger</span>
+                        <div class='social-name'>Blogger</div>
                     </div>
                 </a>                
                 <a href='https://github.com/toiyeumayhoc'>
                     <div class='button-social'>
                         <div class='icon'>
-                            <i class='fab fa-github'/>
+                            <img alt='' src='https://1.bp.blogspot.com/-uhZUhVu47zg/YKj0Mf3wFnI/AAAAAAAAXQA/x1mZ7lMbOz4svH8MudXGG3Yp0D8PefjqgCLcBGAsYHQ/s100/github-brands.png'/>
                         </div>
-                        <span>Github</span>
+                        <div class='social-name'>Github</div>
                     </div>
                 </a>
                 <a href='https://www.youtube.com/channel/UC8TpOqj8O_OtlwczObF7TeA'>
                     <div class='button-social'>
                         <div class='icon'>
-                            <i class='fab fa-youtube'/>
+                            <img alt='' src='https://1.bp.blogspot.com/--39THdk5NME/YKj0NcAeTrI/AAAAAAAAXQI/DAWihqm6HKcmQsxIFahKFJAa5a0gXz5bwCLcBGAsYHQ/s320/youtube-brands.png'/>
                         </div>
-                        <span>YouTube</span>
+                        <div class='social-name'>YouTube</div>
                     </div>
                 </a>
-            </div>
+              
+            </div>            
+          
         </div>
 
         <!--POP UP-->
@@ -700,25 +712,25 @@ p {
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(1)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>After gradutated from the university in 2017, i joined Robert Bosch company as a java developer and
+            <p>After gradutated from the university in 2017, I joined Robert Bosch company as a java developer and
                 work with Spring Boot till now.
-                With Spring Boot, i have worked with Spring Mongo Data, Spring Security, Spring Rest Api and many
+                With Spring Boot, I have worked with Spring Mongo Data, Spring Security, Spring Rest Api and many
                 other libraries which Spring dev team already provided for developers.</p>
         </div>
         <div class='skill-description' id='skill-des-2'>
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(2)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>Started from 2017 (after graduated from the university), i have been worked with Mongo DB for 4
-                years. Mostly i work with Spring MongoDB Data and Mongo aggregation.</p>
+            <p>Started from 2017 (after graduated from the university), I have been worked with Mongo DB for 4
+                years. Mostly I work with Spring MongoDB Data and Mongo aggregation.</p>
         </div>
         <div class='skill-description' id='skill-des-3'>
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(3)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>I just started with React JS from early of 2021. In covid time, i was thinking about making my own
-                project, therefore i started to learn React JS to build the front end side.
-                Luckily, i already had knowledge in HTML, CSS and Javascript so React JS does not take too much
+            <p>I just started with React JS from early of 2021. In covid time, I was thinking about making my own
+                project, therefore I started to learn React JS to build the front end side.
+                Luckily, I already had knowledge in HTML, CSS and Javascript so React JS does not take too much
                 effort from me.
             </p>
         </div>
@@ -726,11 +738,11 @@ p {
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(4)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>Back to the time when i was in university, i joined the MMLAB which focus on AI and Machine Learning
-                projects. Because of that, i gained quite a lot of knowledge in this area.
-                <br/>And i also have knowledge about web security when i worked in OPSWAT Company, which has the
+            <p>Back to the time when I was in university, I joined the MMLAB which focus on AI and Machine Learning
+                projects. Because of that, I gained quite a lot of knowledge in this area.
+                <br/>And I also have knowledge about web security when I worked in OPSWAT Company, which has the
                 business concentrated on Cyber Security.
-                <br/>Currently i am building my own project in my spare time, then i also learn about Docker and
+                <br/>Currently I am building my own project in my spare time, then I also learn about Docker and
                 other devOp stuffs.
             </p>
         </div>
