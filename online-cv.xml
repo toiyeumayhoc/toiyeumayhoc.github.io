@@ -46,6 +46,7 @@ p {
     max-width: 1170px;
     margin: auto;
     margin-bottom: 20px;
+	position: relative;
 }
 
 .title-cv {
@@ -395,6 +396,40 @@ p {
     padding-top: 10px;
   }
 
+/* print button */
+  .print-button {
+      height: 40px;
+      width: 100px;
+      background-color: var(--lemon-yellow-crayola);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      position: fixed;
+      right: 0;
+      bottom: 40px;
+      display: none;
+      padding: 5px;
+      align-items: center;
+      border-right: 0px;
+      box-shadow: -2px 2px 8px;
+      transition: all 0.3s ease-out;
+  }
+
+  .print-button:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  .print-button img {
+      height: 30px;
+  }
+
+  .print-button p {
+      padding-left: 5px;
+      color: var(--dark-state-gray);
+      text-transform: uppercase;
+      font-weight: 501;
+
+  }
 
   /* for Tablet  */
   @media screen and (min-width : 740px) and (max-width : 1000px) {
@@ -405,6 +440,9 @@ p {
 
   /* for Mobile */
   @media screen and (max-width : 740px) {
+	.print-button {
+        display: none;
+    }
     .infor-section {
         flex-flow: wrap;
     }
@@ -463,7 +501,7 @@ p {
   }
 
   @media print {
-    h1 {
+     .title-cv {
         display: none !important;
     }
     .summary-description::after {
@@ -471,6 +509,46 @@ p {
     }
     .connect-me {
         display: none;
+    }
+    .summary-avatar {
+        width: 180px;
+    }
+    .summary {
+        margin-bottom: 0px;
+    }
+    .skill {
+        margin-top: 0px;
+    }
+    .experiences {
+        margin-top: 0px;
+    }
+    .skill-icon {
+        display: none;
+    }
+    .skill-technical {
+        box-shadow: none;
+    }
+    .basic-infor-item {
+        margin : 0px;
+        height: 25px;
+        padding: 0px;
+    }
+    .basic-infor-item img {
+        width: 25px;
+    }
+    h2 {
+        margin: 0px !important;
+        font-size: 25px !important;
+    }
+    .experience-item {
+        margin: 0px;
+        padding: 0px;
+    }
+    .company {
+        font-size: 20px;
+    }
+    .print-button {
+        display: none !important;
     }
   }
 
@@ -704,7 +782,10 @@ p {
                 </a>
               
             </div>            
-          
+            <div class='print-button' id='printbut' onclick='window.print()'>
+                <img alt='' src='https://1.bp.blogspot.com/-N3nwzuxdkOQ/YKkDJDP1a1I/AAAAAAAAXQY/b3h3rqxwINUqFa5JXVAhG4rdObNe-44SwCLcBGAsYHQ/s512/printer.png'/>
+                <p>Print</p>
+            </div>
         </div>
 
         <!--POP UP-->
@@ -779,6 +860,13 @@ p {
         const x = document.getElementById("skill-des-" + index);  
         x.style.display = "none";    
     }
+
+    window.onscroll = function(ev) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && window.innerWidth > 740) {
+            const printbut = document.getElementById("printbut");
+            printbut.style.display = "flex";
+        }
+    };
 	//]]>
   </script>
   

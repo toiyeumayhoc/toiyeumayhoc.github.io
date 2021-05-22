@@ -24,3 +24,10 @@ function closeSkillDescription(index ) {
     const x = document.getElementById("skill-des-" + index);  
     x.style.display = "none";    
 }
+
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && window.innerWidth > 740) {
+        const printbut = document.getElementById("printbut");
+        printbut.style.display = "flex";
+    }
+};
