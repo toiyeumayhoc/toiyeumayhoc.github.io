@@ -304,6 +304,35 @@ p {
     text-align: justify;
 }
 
+.small-projects {
+    text-align: center;
+    line-height: 40px;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid var(--dark-state-gray);
+    font-weight: 501;
+    background-color: var(--lemon-yellow-crayola);
+    transition: 0.2s;
+    max-width: 90vw;
+}
+
+.small-projects img {
+    height: 20px;
+    transform: rotate(90deg) translateX(4px);
+}
+
+.small-projects a {
+    color: var(--dark-state-gray);
+    text-decoration: none;
+}
+
+.small-projects:hover {
+    transform: scale(1.05);
+}
 
 
 
@@ -538,6 +567,9 @@ p {
     }
     .print-button {
         display: none !important;
+    }
+    .small-projects {
+        display: none;
     }
   }
 

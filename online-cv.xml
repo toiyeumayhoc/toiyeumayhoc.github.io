@@ -317,6 +317,35 @@ p {
     text-align: justify;
 }
 
+.small-projects {
+    text-align: center;
+    line-height: 40px;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid var(--dark-state-gray);
+    font-weight: 501;
+    background-color: var(--lemon-yellow-crayola);
+    transition: 0.2s;
+    max-width: 90vw;
+}
+
+.small-projects img {
+    height: 20px;
+    transform: rotate(90deg) translateX(4px);
+}
+
+.small-projects a {
+    color: var(--dark-state-gray);
+    text-decoration: none;
+}
+
+.small-projects:hover {
+    transform: scale(1.05);
+}
 
 
 
@@ -550,6 +579,9 @@ p {
     .print-button {
         display: none !important;
     }
+	.small-projects {
+        display: none;
+    }
   }
 
   /* animation */
@@ -605,11 +637,11 @@ p {
                 <div class='summary'>
                     <img alt='' class='summary-avatar' src='https://1.bp.blogspot.com/-IeOrIffc-HA/YJ9lR2I3grI/AAAAAAAAXME/QlfVmZNpOSIn-b6rY0UbYf9zOHzCOq2awCLcBGAsYHQ/s565/avartar%2Bsquar%2Bpng.png'/>
                     <div class='summary-description'>
-                        <p>Hi there, My name is <a>Le Van Cuong</a>. I&#39;m a developer who have 4 years experience with
+                        <p>Hi there, My name is <a>Le Van Cuong</a>. I&#39;m a developer who have 4 years of experience with
                             <a>Java</a>
                             and <a>Spring Boot</a>.
                         </p>
-                        <p>Beside a developer, I&#39;m also a Photographer, a Booktuber and a Shuffler.</p>
+                        <p>Besides a developer, I&#39;m also a Photographer, a Booktuber and a Shuffler.</p>
                     </div>
                 </div>
             </div>
@@ -704,7 +736,7 @@ p {
                     <p class='company'>Multi Media Lab</p>
                     <p class='time-range'>2016 - 2017</p>
                     <p class='role'>Research Student</p>
-                    <p class='project-summary'>I reseached on Computer Vision, learned about machine learning, got into
+                    <p class='project-summary'>I researched on Computer Vision, learned about machine learning, got into
                         training model. At that time I also did my graduation thesis, so I took a
                         paper about continuous hand gesture recognition and improved the result of the paper. </p>
                 </div>
@@ -712,32 +744,21 @@ p {
                     <p class='company'>Robert Bosch Vietnam</p>
                     <p class='time-range'>2017 - 2019</p>
                     <p class='role'>Java Developer</p>
-                    <p class='project-summary'>I worked for a project which named: &quot;Elevator Monitoring&quot; as a java
-                        backend developer. The project is aim to provide the solution for company that want to monitor
-                        their elevators.
-                        The project is build with Angular in the front-end side, and Spring Boot in backend side with
-                        microservice architecture. Because the team member are from many countries (Singapore,
-                        Philippines, China, Vietnam, Germany) so
-                        I had a chance to learned not only about technical knowledge but also about the other amazing
-                        working cultures.
+                    <p class='project-summary'>I worked on a project named: &quot;Elevator Monitoring&quot; as a java backend developer. The project aims to provide a solution for companies that want to monitor their elevators. The project is built with Angular on the front-end side, and Spring Boot on the backend side with microservice architecture. Because the team members are from many countries (Singapore, Philippines, China, Vietnam, Germany) so I had a chance to learn not only about technical knowledge but also the other amazing working cultures.
                     </p>
                 </div>
                 <div class='experience-item'>
                     <p class='company'>OPSWAT Vietnam</p>
                     <p class='time-range'>2019 - now</p>
                     <p class='role'>Java Developer</p>
-                    <p class='project-summary'>OPSWAT is a Cyber Security company which offering solutions for
-                        comprehensive cybersecurity. And my project is called &quot;MetaAccess&quot;, I joined the team as a
-                        server backend java developer.
-                        The project provides solution for the company that want to control over what devices are
-                        accessing to the network based on the pre-defined policies. Front-end side is build with Angular
-                        and backend side is using Spring Boot framework.
-                        The project is in security area therefore I learned a lot about cyber security standards, about
-                        circumspect implementation to build up a perfect product quality.
+                    <p class='project-summary'>OPSWAT is a Cyber Security company that offers solutions for comprehensive cybersecurity. And my project is called &quot;MetaAccess&quot;, I joined the team as a server backend java developer. The project provides the solution for the company that wants to control over what devices are accessing to the network based on the pre-defined policies. The Front-end side is built with Angular and the backend side is using Spring Boot framework. The project is in the security area therefore I learned a lot about cybersecurity standards, about circumspect implementation to build up a perfect product quality.
                     </p>
                 </div>
             </div>
-            
+            <div class='small-projects'>
+                <img alt='' src='https://1.bp.blogspot.com/-1YngQrvsUDU/YMDpwhz_EfI/AAAAAAAAXd8/n-whVeY3CSg3KRrDHktwjKt4kSogNLYLQCLcBGAsYHQ/s512/up-sign.png'/>
+                <a href='https://toiyeumayhoc.github.io/blog-applications-ui/'>Click here to see my other projects</a>
+            </div>
           	<div class='connect-me'>
                 <h2>Connect with me</h2>
               <a href='https://www.linkedin.com/in/l%C3%AA-v%C4%83n-c%C6%B0%E1%BB%9Dng-5a4601185/'>
@@ -793,10 +814,7 @@ p {
             <div class='des-icon'>
                 <img alt='' class='close-icon' onclick='closeSkillDescription(1)' src='https://1.bp.blogspot.com/-4lTyvGbHSjM/YJ9lSwlQkbI/AAAAAAAAXMU/uLhwNGwNy5MyDtlxlMbnECu5CY9fbrpQgCLcBGAsYHQ/s512/close.png'/>
             </div>
-            <p>After gradutated from the university in 2017, I joined Robert Bosch company as a java developer and
-                work with Spring Boot till now.
-                With Spring Boot, I have worked with Spring Mongo Data, Spring Security, Spring Rest Api and many
-                other libraries which Spring dev team already provided for developers.</p>
+            <p>After graduated from the university in 2017, I joined Robert Bosch company as a java developer and work with Spring Boot till now. With Spring Boot, I have worked with Spring Mongo Data, Spring Security, Spring Rest API and many other libraries which Spring dev team already provided for developers.</p>
         </div>
         <div class='skill-description' id='skill-des-2'>
             <div class='des-icon'>
@@ -823,8 +841,7 @@ p {
                 projects. Because of that, I gained quite a lot of knowledge in this area.
                 <br/>And I also have knowledge about web security when I worked in OPSWAT Company, which has the
                 business concentrated on Cyber Security.
-                <br/>Currently I am building my own project in my spare time, then I also learn about Docker and
-                other devOp stuffs.
+                <br/>Currently, I am building my own project in my spare time, then I also learn about Docker and other DevOps stuffs.
             </p>
         </div>
 
