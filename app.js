@@ -29,5 +29,8 @@ window.onscroll = function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && window.innerWidth > 740) {
         const printbut = document.getElementById("printbut");
         printbut.style.display = "flex";
+
+        const certificateButton = document.getElementById("certificateButton");
+        certificateButton.style.display = "flex";
     }
 };
